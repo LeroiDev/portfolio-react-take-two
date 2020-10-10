@@ -1,11 +1,15 @@
 import React from 'react';
-import './App.css';
+import './app.css';
+import {BrowserRouter as RouterR} from 'react-router-dom'
+import Navbar from './components/navbar/Navbar';
 
-function App() {
+const App = ()=> {
   return (
-    <div className="App">
-<h1>Dev environment running</h1>
+    <RouterR>
+    <div className="app">
+      <Navbar/>
     </div>
+    </RouterR>
   );
 }
 
