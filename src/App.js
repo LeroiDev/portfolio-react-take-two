@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './app.css';
-import {BrowserRouter as RouterR} from 'react-router-dom'
-import Navbar from './components/navbar/Navbar';
-
+import {BrowserRouter as Router} from 'react-router-dom'
+import HomePage from './pages/HomePage';
+// trying to keep all functionality centeral in app.js
+// no use of context or api used for port site. prop driller
 const App = ()=> {
+  const [isOpen,setIsOpen] = useState(false);
+     const toggle = () =>{
+       setIsOpen(!isOpen)
+      }
   return (
-    <RouterR>
-    <div className="app">
-      <Navbar/>
-    </div>
-    </RouterR>
+    <Router>
+    <HomePage isOpen={isOpen} toggle={toggle} />
+    </Router>
   );
 }
 

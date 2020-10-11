@@ -6,7 +6,11 @@ import {FaBars} from 'react-icons/fa'
 import Logo from '../../images/textlogo.gif'
 
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
+
+
+
+
   return (
     <>
    <nav>
@@ -15,7 +19,7 @@ const Navbar = () => {
          <img style={{width:"120px"}} src={Logo} alt="Leroi"/>
        </LinkR>
        <div className="mobile-icon">
-         <FaBars/>
+         <FaBars  onClick={toggle}/>
        </div>
        <ul className="navbar-menu">
          <li className="navbar-item">
