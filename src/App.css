@@ -7,3 +7,32 @@
 body {
   font-family: "Chakra Petch", sans-serif;
 }
+/* reusable button links */
+.btn {
+  border-radius: 50px;
+  white-space: nowrap;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms ease-in-out;
+}
+.btn:hover {
+  transition: all 200ms ease-in-out;
+}
+.btn-dark {
+  background: #010606;
+  color: #fff;
+}
+.btn-light {
+  background: #01bf71;
+  text-emphasis: #010606;
+}
+.btn-big {
+  padding: 14px 48px;
+}
+.btn-med {
+  padding: 12px 30px;
+}
