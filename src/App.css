@@ -7,6 +7,10 @@
 body {
   font-family: "Chakra Petch", sans-serif;
 }
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
 /* reusable button links */
 .btn {
   border-radius: 50px;
