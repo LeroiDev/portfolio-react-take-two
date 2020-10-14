@@ -1,4 +1,15 @@
-#contact-a .text-fields {
+#contact {
+  background: linear-gradient(rgba(5, 4, 3, 1), rgba(0, 0, 0, 0));
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.section-title {
+  padding-top: 3rem;
+}
+#contact .text-fields {
   display: grid;
   grid-template-areas:
     "name email"
@@ -6,27 +17,81 @@
     "message message";
   gap: 1.2rem;
   margin-bottom: 1.2rem;
+  padding: 0 2rem;
 }
-#contact-a .text-fields .name-input {
+#contact .text-fields .name-input {
   grid-area: name;
 }
-#contact-a .text-fields .email-input {
+#contact .text-fields .email-input {
   grid-area: email;
 }
-#contact-a .text-fields .subject-input {
+#contact .text-fields .subject-input {
   grid-area: subject;
 }
-#contact-a .text-fields .phone-input {
+#contact .text-fields .phone-input {
   grid-area: phone;
 }
-#contact-a .text-fields .message-input {
+#contact .text-fields .message-input {
   grid-area: message;
   height: 100px;
 }
-#contact-a .text-fields .text-input {
+#contact .text-fields .text-input {
   padding: 0.5rem 1rem;
 }
+#contact .text-fields input {
+  margin: 0 1rem;
+}
 
-#contact-a button[type="submit"] {
+#contact button[type="submit"] {
   width: 50%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50px;
+  background: #01bf71;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: #010606;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+}
+#contact button[type="submit"]:hover {
+  transition: all 200ms ease-in-out;
+  background: #fff;
+  color: #010606;
+}
+.skills-images {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  margin: 1rem;
+}
+.skills-images img {
+  width: 15%;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  #contact .text-fields {
+    display: grid;
+    grid-template-areas:
+      "name"
+      "email"
+      "subject"
+      "phone"
+      "message";
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .skills-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    margin: 1rem;
+  }
 }

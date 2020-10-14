@@ -12,6 +12,7 @@ const Projects = () => {
         <h2 className="section-title">Some Projects built this past month</h2>
         <div className="bottom-line"></div>
         <div className="items">
+          <a href="https://google.com">
           <div className="item">
             <div className="item-image">
               <img src={covidLogo} alt="" />
@@ -23,6 +24,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
+          </a>
           <div className="item">
             <div className="item-image">
               <img src={airbnb} alt="" />

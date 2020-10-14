@@ -2,7 +2,6 @@ import React from 'react'
 import './sidebar.css'
 import {FaTimes} from 'react-icons/fa'
 import {Link as LinkS} from 'react-scroll' 
-import {Link as LinkR} from 'react-router-dom'
 
 const Sidebar = ({isOpen,toggle}) => {
 
@@ -16,11 +15,13 @@ const Sidebar = ({isOpen,toggle}) => {
     </div>
     <div className="sidebar-wrapper">
        <ul className="sidebar-menu">
-         <LinkS onClick={toggle} className='sidebar-link link'to="about">About</LinkS>
-         <LinkS onClick={toggle} className='sidebar-link link'to="projects">Projects</LinkS>
+         <LinkS onClick={toggle} className='sidebar-link link'to="about" smooth={true} duration={500} spy={true} exact='true' offset={-70} >About</LinkS>
+         <LinkS onClick={toggle} className='sidebar-link link'to="projects" smooth={true} duration={500} spy={true} exact='true' offset={-20} >Projects</LinkS>
        </ul>
        <div className="sidebar-btn-wrapper">
-         <LinkR to="/contact">Contact Me</LinkR>
+       <LinkS to="contact" onClick={toggle} smooth={true} duration={700} spy={true} exact='true' offset={-30} >
+          Contact Me
+        </LinkS>
        </div>
      </div>
   </div> 

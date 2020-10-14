@@ -1,15 +1,18 @@
 import React from 'react';
 import './contactStyle.css';
-import reactlogo from '../../images/react.svg';
+import htmlCssLogo from '../../images/htmlcss-logo.png'
+import sassLogo from '../../images/sass-logo.png'
+import jsLogo from '../../images/js-logo.png'
+import reactLogo from '../../images/react-logo.png'
+import githubLogo from '../../images/github-logo.png'
 
 const Contact = () => {
   return (
 
-    <section id="contact-a" className="text-center py-3">
+    <section id="contact" className="text-center py-3">
       <div className="container">
         <h2 className="section-title">Contact Me</h2>
         <div className="bottom-line"></div>
-        <p className="lead">Here is how you can reach me</p>
         <form>
           <div className="text-fields">
             <input
@@ -26,7 +29,7 @@ const Contact = () => {
             />
             <input
               className="text-input email-input"
-              type="emial"
+              type="email"
               name="email"
               placeholder="Enter your email..."
             />
@@ -42,9 +45,15 @@ const Contact = () => {
               placeholder="Enter a short message..."
             ></textarea>
           </div>
-          <button type="submit" className="btn-dark">Submit</button>
+          <button type="submit" name='submit' className="btn-dark">Submit</button>
         </form>
-        <img src={reactlogo} alt=""/>
+        <div className="skills-images">
+          <img src={htmlCssLogo} alt=""/>
+          <img src={sassLogo} alt=""/>
+          <img src={jsLogo} alt=""/>
+          <img src={reactLogo} alt=""/>
+          <img src={githubLogo} alt=""/>
+        </div>
       </div>
     </section>
   )

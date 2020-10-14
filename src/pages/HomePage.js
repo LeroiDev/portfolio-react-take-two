@@ -5,6 +5,7 @@ import HeroSection from '../components/hero/HeroSection'
 import ProjectsSection from '../components/projects/ProjectsSection'
 import About from '../components/about/About'
 import Footer from '../components/footer/Footer';
+import Contact from '../components/contact/Contact'
 
 const HomePage = ({isOpen,toggle}) => {
   return (
@@ -14,6 +15,7 @@ const HomePage = ({isOpen,toggle}) => {
       <HeroSection/>
       <ProjectsSection/>
       <About/>
+      <Contact/>
       <Footer/>
       </>      
   )
