@@ -18,7 +18,6 @@ const Sidebar = ({isOpen,toggle}) => {
        <ul className="sidebar-menu">
          <LinkS onClick={toggle} className='sidebar-link link'to="about">About</LinkS>
          <LinkS onClick={toggle} className='sidebar-link link'to="projects">Projects</LinkS>
-         <LinkS onClick={toggle} className='sidebar-link link'to="social">Social Media</LinkS>
        </ul>
        <div className="sidebar-btn-wrapper">
          <LinkR to="/contact">Contact Me</LinkR>

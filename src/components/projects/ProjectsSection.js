@@ -7,7 +7,7 @@ import github from '../../images/github.jpeg'
 import './projects.css'
 const Projects = () => {
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <div className="container">
         <h2 className="section-title">Some Projects built this past month</h2>
         <div className="bottom-line"></div>

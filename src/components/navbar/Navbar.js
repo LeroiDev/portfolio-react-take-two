@@ -7,10 +7,6 @@ import Logo from '../../images/textlogo.gif'
 
 
 const Navbar = ({toggle}) => {
-
-
-
-
   return (
     <>
    <nav>
@@ -27,9 +23,6 @@ const Navbar = ({toggle}) => {
          </li>
          <li className="navbar-item">
            <LinkS className='link'to="about">About</LinkS>
-         </li>
-         <li className="navbar-item">
-           <LinkS className='link'to="/contact">Social Media</LinkS>
          </li>
        </ul>
       <div className='navbar-btn'>

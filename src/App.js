@@ -17,7 +17,9 @@ const App = ()=> {
     render={props => 
       (<HomePage {...props} isOpen={isOpen} toggle={toggle} />)
     }/>
-    <Route exact path="/contact" component={ContactPage} />
+    <Route exact path="/contact" render={props => 
+      (<ContactPage {...props} isOpen={isOpen} toggle={toggle} />)
+    }/>
     </Switch>
     </Router>
   );
