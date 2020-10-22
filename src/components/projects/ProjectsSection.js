@@ -29,11 +29,14 @@ const Projects = () => {
             <div className="item-image">
               <img src={airbnb} alt="" />
             </div>
-            <div className="item-text">
+
+            <div  className="item-text">
+            <a rel="noopener noreferrer" href="https://clone-airbnb-react.web.app/" target="_blank">
               <div className="item-text wrap">
                 <p className="item-text-category">React</p>
                 <h2 className="item-text-title">Airbnb Clone</h2>
               </div>
+            </a>
             </div>
           </div>
           <div className="item">

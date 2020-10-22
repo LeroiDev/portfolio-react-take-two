@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="flex-rows">
           <div className="footer-pages">
             <li>
-              <LinkS className="links" to="projects" smooth={true} duration={500} spy={true} exact='true' offset={-20}>
+              <LinkS className="links" to="projects" smooth={true} duration={500} spy={true} exact='true' offset={-30}>
                 <i className="fab fa-react"></i> Projects
               </LinkS>
             </li>
